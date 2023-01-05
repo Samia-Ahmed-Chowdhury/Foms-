@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --main-nav-color: #daac00;
+    --main-color: #fcc302;
+    --main-secondary-color: #00bec9;
+    --main-regular-font: 'Inter', sans-serif;
+    --main-rear-font: 'Roboto', sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    width: 16.421rem;
+    height: 6rem;
+}
+
+.hero-img {
+    width: 61.2rem;
+    height: 43.7rem;
+}
+
+form {
+    padding-bottom: 1.6rem;
+    width: 51.6rem;
+    height: 55rem;
+    box-shadow: 1px -10px 25px rgba(201, 201, 201, 0.25), -1px 10px 25px rgba(147, 147, 147, 0.25);
+}
+
+.heading_text {
+    font-family: var(--main-regular-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #000000;
+    padding: 7.9rem 0 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    margin: 5.5rem 0;
+}
+
+.btn_cls {
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    border: none !important;
+    border-bottom: 1px solid #A4A4A4 !important;
+    width: 35.85rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    font-family: var(--main-regular-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding-left: 1rem;
+    color: #B4B4B4;
+}
+
+.submit_btn {
+    background: #1678CB;
+    box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+    font-family: var(--main-regular-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #FFFFFF;
+    border: 1px solid #1678CB;
+    transition: all .9s ease;
+}
+
+.submit_btn svg {
+    font-size: 2.5rem !important;
+}
+
+.submit_btn:hover {
+    background: #FFFFFF;
+    border: 1px solid #1678CB;
+    color: #1678CB;
+}
+
+.account {
+    margin: 7rem 0 7rem 18rem;
+}
+
+.account p {
+    font-family: var(--main-regular-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #7E7E7E;
+}
+
+.account p span {
+    cursor: pointer;
+    font-family: var(--main-regular-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-decoration-line: underline;
+    color: #1678CB;
+    margin-left: .5rem;
+}
+
+/* --------------------form2----------------- */
+.code_input {
+    width: 8rem;
+}
+
+.num_input {
+    width: 27rem;
+    margin-left: 1rem;
+}
+
+.back_btn {
+    font-family: var(--main-regular-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #767676;
+    margin-top: 3.5rem;
+    margin-left: -8.2rem;
+    margin-right: 7rem;
+    cursor: pointer;
+
+}
+
+/* ------------form3--------------- */
+.pass_valid_text {
+    font-family: var(--main-regular-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #7E7E7E;
+    margin: 0.5rem 0 0 9rem;
+}
+
+/* =============== tab=========== */
+
+.theader {
+    font-family: var(--main-rear-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    width: 48rem;
+    height: 7.2rem;
+    background: #1678CB;
+    border-radius: .5rem;
+    text-align: center;
+    table-layout: fixed;
+    color: #FFFFFF;
+}
+
+table th {
+    font-family: var(--main-rear-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #000000;
+    table-layout: fixed;
+}
+
+table td {
+    font-family: var(--main-rear-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #000000;
+    width: 33%;
+    table-layout: fixed;
+    justify-content: space-evenly;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid black;
+
+}
+
+
+/* media query */
+@media only screen and (max-width:1400px) {
+    html {
+        font-size: 52% !important;
+    }
+}
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 50% !important;
+    }
+    
+}
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 48% !important;
+    }
+}
+@media only screen and (max-width:980px) {
+    form {
+        width: 45.6rem;
+        height: 55rem;
+    }
+}
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }}
+    @media only screen and (max-width:428px) {
+        form {
+            width: 40.6rem;
+        }}
+        @media only screen and (max-width:360px) {
+            form {
+                width: 38.6rem;
+            }}
